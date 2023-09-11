@@ -1,0 +1,12 @@
+# Run Server
+1. Jalankan, npm install
+2. Setting .env
+3. Setting db.pgp.js
+4. setting db.knex.js
+5. Jalankan, knex migrate:latest
+6. Buka folder routers -> product.js -> lalu jalankan route "/download" untuk akses data dari API Jubelio
+7. Jalankan, npm start
+
+# Run Client
+1. Jalankan, npm install
+2. npm start
