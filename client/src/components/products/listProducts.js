@@ -188,8 +188,10 @@ const InputProducts = () => {
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="name">
-              <Form.Label>Product Name</Form.Label>
+            <Form.Group style={{ marginTop: "10px" }} controlId="name">
+              <Form.Label>
+                Product Name <sup style={{ color: "red" }}>*</sup>
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter product name"
@@ -197,8 +199,10 @@ const InputProducts = () => {
                 onChange={handleFormChange}
               />
             </Form.Group>
-            <Form.Group controlId="sku">
-              <Form.Label>SKU</Form.Label>
+            <Form.Group style={{ marginTop: "10px" }} controlId="sku">
+              <Form.Label>
+                SKU <sup style={{ color: "red" }}>*</sup>
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter SKU"
@@ -206,8 +210,11 @@ const InputProducts = () => {
                 onChange={handleFormChange}
               />
             </Form.Group>
-            <Form.Group controlId="price">
-              <Form.Label>Price</Form.Label>
+            <Form.Group style={{ marginTop: "10px" }} controlId="price">
+              <Form.Label>
+                Price
+                <sup style={{ color: "red" }}>*</sup>
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter Price"
@@ -215,8 +222,11 @@ const InputProducts = () => {
                 onChange={handleFormChange}
               />
             </Form.Group>
-            <Form.Group controlId="slug">
-              <Form.Label>Slug</Form.Label>
+            <Form.Group style={{ marginTop: "10px" }} controlId="slug">
+              <Form.Label>
+                Slug
+                <sup style={{ color: "red" }}>*</sup>
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter Slug"
@@ -224,8 +234,11 @@ const InputProducts = () => {
                 onChange={handleFormChange}
               />
             </Form.Group>
-            <Form.Group controlId="description">
-              <Form.Label>Description</Form.Label>
+            <Form.Group style={{ marginTop: "10px" }} controlId="description">
+              <Form.Label>
+                Description
+                <sup style={{ color: "red" }}>*</sup>
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter Description"
@@ -233,12 +246,15 @@ const InputProducts = () => {
                 onChange={handleFormChange}
               />
             </Form.Group>
-            <Form.Group controlId="image">
-              <Form.Label>Image</Form.Label>
+            <Form.Group style={{ marginTop: "10px" }} controlId="image">
+              <Form.Label>
+                Image
+                <sup style={{ color: "red" }}>*</sup>
+              </Form.Label>
               <Form.Control
                 type="file"
                 accept="image/*"
-                name="image" // Change this to "image"
+                name="image"
                 onChange={handleFormChange}
               />
             </Form.Group>
@@ -264,8 +280,10 @@ const InputProducts = () => {
         <Modal.Body>
           {selectedProduct && (
             <Form onSubmit={handleEditSubmit}>
-              <Form.Group controlId="editName">
-                <Form.Label>Product Name</Form.Label>
+              <Form.Group style={{ marginTop: "10px" }} controlId="editName">
+                <Form.Label>
+                  Product Name <sup style={{ color: "red" }}>*</sup>
+                </Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Enter product name"
@@ -274,8 +292,10 @@ const InputProducts = () => {
                   onChange={handleEditFormChange}
                 />
               </Form.Group>
-              <Form.Group controlId="editSKU">
-                <Form.Label>SKU</Form.Label>
+              <Form.Group style={{ marginTop: "10px" }} controlId="editSKU">
+                <Form.Label>
+                  SKU <sup style={{ color: "red" }}>*</sup>
+                </Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Enter SKU"
@@ -284,8 +304,10 @@ const InputProducts = () => {
                   onChange={handleEditFormChange}
                 />
               </Form.Group>
-              <Form.Group controlId="editPrice">
-                <Form.Label>Price</Form.Label>
+              <Form.Group style={{ marginTop: "10px" }} controlId="editPrice">
+                <Form.Label>
+                  Price <sup style={{ color: "red" }}>*</sup>
+                </Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Enter Price"
@@ -294,8 +316,10 @@ const InputProducts = () => {
                   onChange={handleEditFormChange}
                 />
               </Form.Group>
-              <Form.Group controlId="editSlug">
-                <Form.Label>Slug</Form.Label>
+              <Form.Group style={{ marginTop: "10px" }} controlId="editSlug">
+                <Form.Label>
+                  Slug <sup style={{ color: "red" }}>*</sup>
+                </Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Enter slug"
@@ -304,8 +328,13 @@ const InputProducts = () => {
                   onChange={handleEditFormChange}
                 />
               </Form.Group>
-              <Form.Group controlId="editDescription">
-                <Form.Label>Description</Form.Label>
+              <Form.Group
+                style={{ marginTop: "10px" }}
+                controlId="editDescription"
+              >
+                <Form.Label>
+                  Description <sup style={{ color: "red" }}>*</sup>
+                </Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Enter Description"
@@ -314,8 +343,10 @@ const InputProducts = () => {
                   onChange={handleEditFormChange}
                 />
               </Form.Group>
-              <Form.Group controlId="editImage">
-                <Form.Label>Image</Form.Label>
+              <Form.Group style={{ marginTop: "10px" }} controlId="editImage">
+                <Form.Label>
+                  Image <sup style={{ color: "red" }}>*</sup>
+                </Form.Label>
                 <Form.Control
                   type="file"
                   accept="image/*"
