@@ -17,7 +17,7 @@ const updateProduct = async (req, res) => {
 
     if (image) {
       const imageDir = path.join(__dirname, "../uploads");
-      imageUrl = `http://localhost:5000/uploads/${image.filename}`;
+      imageUrl = `http://localhost:5000/products/uploads/${image.filename}`;
       fs.renameSync(image.path, path.join(imageDir, image.filename));
     }
 

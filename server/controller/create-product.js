@@ -15,7 +15,7 @@ const createProduct = async (req, res) => {
 
     // Save the image file to a specified directory
     const imageDir = path.join(__dirname, "../uploads");
-    const imageUrl = `http://localhost:5000/uploads/${image.filename}`;
+    const imageUrl = `http://localhost:5000/products/uploads/${image.filename}`;
 
     fs.renameSync(image.path, path.join(imageDir, image.filename));
 
